@@ -37,6 +37,7 @@ const startStreaming = (client, profile) => {
     .then( stream => {
       $("#video-status").text("started")
       $("video")[0].srcObject = stream
+      $("video")[0].play()
     })
 }
 
